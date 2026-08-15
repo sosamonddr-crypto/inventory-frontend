@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = "https://inventory-management-system-44py.onrender.com/api";
 
 async function request(path, options = {}) {
     const token = localStorage.getItem("token");
@@ -51,4 +51,4 @@ export const api = {
     del: (path) => request(path, { method: "DELETE" }),
 };
 
-export const IMAGE_BASE_URL = "http://localhost:3000";
+export const IMAGE_BASE_URL = "https://inventory-management-system-44py.onrender.com";
